@@ -1,13 +1,13 @@
 // Define image paths for public images
 export const images = {
-  HOTBanner: '/attached_assets/HOTbanner.jpg',
-  HOTLogo: '/attached_assets/hot.jpg',
-  steak: '/attached_assets/steak.jpg',
-  burger: '/attached_assets/burger.jpg',
-  corndog: '/attached_assets/corndog.jpg',
-  mac: '/attached_assets/mac.jpg',
-  meatball: '/attached_assets/meatball.jpg',
-  pie: '/attached_assets/pie.jpg'
+  HOTBanner: '/images/HOTbanner.jpg',
+  HOTLogo: '/images/hot.jpg',
+  steak: '/images/steak.jpg',
+  burger: '/images/burger.jpg',
+  corndog: '/images/corndog.jpg',
+  mac: '/images/mac.jpg',
+  meatball: '/images/meatball.jpg',
+  pie: '/images/pie.jpg'
 };
 
 // Restaurant information
