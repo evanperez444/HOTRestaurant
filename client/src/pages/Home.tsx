@@ -1,7 +1,7 @@
 import { Link } from 'wouter';
 import ImageCarousel from '@/components/ImageCarousel';
 import { carouselImages } from '@/data/menuItems';
-import { images, restaurantInfo } from '@/data/assets';
+import { images, restaurantInfo, socialLinks } from '@/data/assets';
 
 const Home = () => {
   return (
@@ -44,8 +44,8 @@ const Home = () => {
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-4 playfair">Our <span className="text-primary">Story</span></h2>
               <p className="text-gray-300 mb-4">
-                Welcome to <strong>HOT Restaurant</strong>, where we serve delicious, homemade dishes made with HEAT. 
-                Our journey started in 2025 when our founders, Mike and Steve, had a vision of creating a place where friends 
+                Welcome to <strong>{restaurantInfo.name}</strong>, where we serve delicious, homemade dishes made with HEAT. 
+                Our journey started in {restaurantInfo.foundingYear} when our founders, {restaurantInfo.founders}, had a vision of creating a place where friends 
                 and families could gather to enjoy HOT and flavorful food.
               </p>
               <p className="text-gray-300 mb-6">
@@ -59,8 +59,8 @@ const Home = () => {
             
             <div className="md:w-1/2 mt-6 md:mt-0">
               <img 
-                src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="HOT Restaurant interior" 
+                src={images.HOTBanner} 
+                alt="HOT Restaurant banner" 
                 className="rounded-lg shadow-lg w-full h-auto" 
               />
             </div>
@@ -72,7 +72,8 @@ const Home = () => {
       <section className="py-8 px-4 bg-secondary">
         <div className="container mx-auto text-center">
           <h2 className="text-2xl font-bold mb-4 playfair">Business Hours</h2>
-          <p className="text-gray-300 text-lg">Monday - Sunday: 10 AM - 10 PM</p>
+          <p className="text-gray-300 text-lg">{restaurantInfo.hours}</p>
+          <p className="text-gray-300 text-lg mt-2">Phone: {restaurantInfo.phone}</p>
           
           <div className="mt-6 flex justify-center space-x-4">
             <a href="#" className="text-white hover:text-primary transition duration-200">
