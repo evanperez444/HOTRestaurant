@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import { useCart } from '../context/CartContext';
+import { images } from '../data/assets';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,8 +25,11 @@ const Header = () => {
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center cursor-pointer">
-            <h1 className="text-primary font-serif text-3xl font-bold playfair">HOT</h1>
-            <span className="text-white text-xl ml-2">Restaurant</span>
+            <img src={images.HOTLogo} alt="HOT Restaurant" className="h-10 mr-2" />
+            <div>
+              <h1 className="text-primary font-serif text-3xl font-bold playfair">HOT</h1>
+              <span className="text-white text-xl ml-1">Restaurant</span>
+            </div>
           </div>
         </Link>
         

@@ -1,23 +1,13 @@
-// Import all image assets
-import HOTBanner from '@assets/HOTbanner.jpg';
-import HOTLogo from '@assets/hot.jpg';
-import steakImg from '@assets/steak.jpg';
-import burgerImg from '@assets/burger.jpg';
-import corndogImg from '@assets/corndog.jpg';
-import macImg from '@assets/mac.jpg';
-import meatballImg from '@assets/meatball.jpg';
-import pieImg from '@assets/pie.jpg';
-
-// Export image assets
+// Define image paths for public images
 export const images = {
-  HOTBanner,
-  HOTLogo,
-  steak: steakImg,
-  burger: burgerImg,
-  corndog: corndogImg,
-  mac: macImg,
-  meatball: meatballImg,
-  pie: pieImg
+  HOTBanner: '/attached_assets/HOTbanner.jpg',
+  HOTLogo: '/attached_assets/hot.jpg',
+  steak: '/attached_assets/steak.jpg',
+  burger: '/attached_assets/burger.jpg',
+  corndog: '/attached_assets/corndog.jpg',
+  mac: '/attached_assets/mac.jpg',
+  meatball: '/attached_assets/meatball.jpg',
+  pie: '/attached_assets/pie.jpg'
 };
 
 // Restaurant information

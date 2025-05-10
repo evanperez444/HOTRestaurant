@@ -20,7 +20,7 @@ const Home = () => {
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 playfair">
                 Welcome to <span className="text-primary">HOT</span> Restaurant
               </h1>
-              <p className="text-xl text-white mb-8">Where every meal brings the heat</p>
+              <p className="text-xl text-white mb-8">{restaurantInfo.slogan}</p>
               <Link href="/menu" className="bg-primary hover:bg-accent text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">
                 View Our Menu
               </Link>
