@@ -1,15 +1,13 @@
 # HOT Restaurant Website
 
-A modern restaurant website built with React and Tailwind CSS showcasing a responsive design, interactive shopping cart functionality, and dynamic content management.
+A modern restaurant website built with React and Tailwind CSS showcasing a responsive design, interactive shopping cart functionality.
 
 ## Features
 
-- **Responsive Design**: Mobile-first approach ensures beautiful display on all devices
 - **Interactive Menu**: Browse menu items with descriptions and pricing
 - **Shopping Cart**: Add and remove items, view cart totals
 - **Location Map**: Google Maps integration on the Contact page
 - **Contact Form**: Interactive form for customer inquiries
-- **Dynamic Content**: Content management through central data stores
 
 ## Tech Stack
 
@@ -46,7 +44,3 @@ A modern restaurant website built with React and Tailwind CSS showcasing a respo
 ## License
 
 MIT
-
-## Created By
-
-[Your Name] - [Your Link/Portfolio]
