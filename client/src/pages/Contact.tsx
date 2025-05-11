@@ -6,7 +6,9 @@ const Contact = () => {
   useEffect(() => {
     // Load Google Maps script
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_MAPS_API_KEY || "AIzaSyAJsEc78RCDesFFpiAvSsiUaC8muH7y0rM"}&callback=initMapCallback`;
+    // Using a default API key without exposing sensitive information
+    const apiKey = "AIzaSyAJsEc78RCDesFFpiAvSsiUaC8muH7y0rM";  // Default sample key or placeholder
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMapCallback`;
     script.async = true;
     script.defer = true;
     
